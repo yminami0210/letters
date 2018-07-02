@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2018_07_02_134856) do
     t.string "story"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "date"
+    t.string "date",null: false
   end
 
 end

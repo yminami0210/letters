@@ -45,6 +45,7 @@ class LettersController < ApplicationController
         format.html { redirect_to @letter, notice: 'Letter was successfully updated.' }
         format.json { render :show, status: :ok, location: @letter }
       else
+        byebug
         format.html { render :edit }
         format.json { render json: @letter.errors, status: :unprocessable_entity }
       end
